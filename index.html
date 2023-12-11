@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cyan-background text-dark text-center py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="m-0 d-flex align-items-center">Biryani Kingdom </h1>
+              <div id="header-banner-container">
+                <div id="header-banner">
+                    Open 7 days a week | Lunch: 12-3 PM | Dinner: 6-9 PM
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="openSignupModal()">Sign up</button>
+        </div>
+    </header>
+
+
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Signup</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="signupUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="signupUsername"
+                                placeholder="Enter your username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword"
+                                placeholder="Enter your password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-5">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center">
+                <img src="biryani_img.jpg" class="img-fluid" alt="Biryani Image">
+            </div>
+            <div class="col-md-6">
+                <h2>America's Best Biryani</h2>
+                <p class="text-left">This Biryani is made with homemade spices and it is so good to resist...</p>
+                <p class="text-left">You will return for more of this spicy food to satisfy your taste buds...!</p>
+                <div class="my-3">
+                    <a href="https://www.facebook.com" class="btn btn-primary mr-3" target="_blank">Facebook</a>
+                    <a href="https://www.twitter.com" class="btn btn-info" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 mb-4 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Starter Menu</h5>
+                        <hr>
+                        <pre>
+Chicken 65.     $10
+Chicken Tikka.  $15
+Fish fry.       $14
+Shrimp masala.  $12
+</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Biryani Menu</h5>
+                        <hr>
+                        <pre>
+Chicken Biryani.  $18
+Shrimp Biryani.   $18
+Goat Biryani.     $18
+Egg Biryani.      $17
+</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Drinks Menu</h5>
+                        <hr>
+                        <pre>
+Coco cola.      $2
+Pepsi.          $2
+Mango Lassi.    $3
+Fanta.          $3
+</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center my-5 gray-background">
+        
+        <h3 class="mt-3">The <img src="chef.jpg" class="rounded-circle border border-dark" alt="Chef Image"
+                width="150" height="150"> Chef</h3>
+                
+    </div>
+
+    <div class="container my-5 text-center">
+        <h3>TESTIMONIALS FROM CUSTOMERS</h3>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="male1.jpg" class="rounded-circle border border-dark mb-3" alt="Chef Image" width="80"
+                        height="80">
+                    <hr>
+                        <p class="card-text">"The Biryani's are spicy and Yummy! "</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="female1.jpg" class="rounded-circle border border-dark mb-3" alt="Chef Image" width="80"
+                        height="80">
+                    <hr>
+                        <p class="card-text">"The Chicken 65 is so crispy !"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="male3.jpg" class="rounded-circle border border-dark mb-3" alt="Chef Image" width="80"
+                        height="80">
+                    <hr>
+                        <p class="card-text">"Fantastic overall experience! "</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="male4.jpg" class="rounded-circle border border-dark mb-3" alt="Chef Image" width="80"
+                        height="80">
+                    <hr>
+                        <p class="card-text">"Superb range of Biryani's!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="female2.jpg" class="rounded-circle border border-dark mb-3" alt="Chef Image" width="80"
+                        height="80">
+                    <hr>
+                        <p class="card-text">"Highly recommend this place!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="male5.jpg" class="rounded-circle border border-dark mb-3" alt="Chef Image" width="80"
+                        height="80">
+                    <hr>
+                        <p class="card-text">"Culinary masterpiece."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; Copyright Biryani Kingdom  2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha384-oC+ucOjw5HzsMyK8iZLd7fj2X4UAQw/NSKMC+2gUqUspPfTO9gMKFlFSM57d7VqC"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

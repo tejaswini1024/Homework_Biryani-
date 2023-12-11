@@ -1,0 +1,42 @@
+hr {
+    border-top: 4px solid #000;
+    margin: 20px 0;
+}
+.header-logo {
+    max-height: 50px; 
+}
+.gray-background {
+    background-color: darkcyan; 
+    padding: 20px; 
+    border-radius: 0; 
+}
+.cyan-background {
+    background-color: darkcyan; 
+    padding: 5px; 
+    border-radius: 0; 
+}
+header {
+margin-bottom: 0;
+}
+
+#header-banner-container {
+    overflow: hidden;
+}
+#header-banner {
+    background-color: darkcyan; 
+    color: #721c24; 
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    animation: moveBanner 10s linear infinite;
+}
+
+@keyframes moveBanner {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
